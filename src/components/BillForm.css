@@ -1,0 +1,103 @@
+.bill-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bill-form-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    flex: 2;
+    color: black;
+}
+
+/* Input fields */
+.bill-form-container input,
+.bill-form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 3;
+    color: black;
+}
+
+/* Error Icon - Reserves Space */
+.error-container {
+    width: 24px;
+    /* Fixed width to prevent shifting */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.error-icon {
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    visibility: visible;
+    /* Initially hidden */
+}
+
+.show-error .error-icon {
+    visibility: visible;
+    /* Show icon when there's an error */
+}
+
+/* Error Tooltip */
+.error {
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e74c3c;
+    color: white;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: visible;
+}
+
+.show-error .error {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Button */
+.bill-form-container button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 50%;
+}
+
+.bill-form-container button:hover {
+    background: #0056b3;
+}

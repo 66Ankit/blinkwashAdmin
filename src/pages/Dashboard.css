@@ -1,0 +1,28 @@
+/* Ensure the full page height */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: red;
+    /* background: linear-gradient(to right, #141e30, #243b55); */
+    color: white;
+}
+
+/* Content area below the navbar */
+.dashboard-content {
+    flex-grow: 1;
+    width: 100%;
+    /* Allows content to take remaining space */
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    /* Prevents overlap with sticky navbar */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-content {
+        padding: 15px;
+    }
+}
